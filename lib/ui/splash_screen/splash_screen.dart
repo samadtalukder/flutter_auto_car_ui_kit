@@ -1,4 +1,4 @@
-import 'package:auto_car_ui_kit/image_path.dart';
+import 'package:auto_car_ui_kit/config/image_path.dart';
 import 'package:auto_car_ui_kit/ui/on_board_screen/on_board_data_model.dart';
 import 'package:auto_car_ui_kit/ui/on_board_screen/on_board_item.dart';
 import 'package:auto_car_ui_kit/ui/on_board_screen/on_board_screen.dart';

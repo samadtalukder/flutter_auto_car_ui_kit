@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../image_path.dart';
+import '../../config/image_path.dart';
 
 class OnBoardDataModel {
   final String onBoardTitle;
