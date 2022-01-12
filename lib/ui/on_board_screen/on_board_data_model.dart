@@ -16,13 +16,13 @@ List<OnBoardDataModel> onBoardList = [
   OnBoardDataModel(
     "Find Your Dream Car",
     "Find the car of your dreams from the worlds largest marketplace",
-    ImagePath.icCar,
+    ImagePath.onBoardCar_1,
     Colors.white,
   ),
   OnBoardDataModel(
     "Your Offer Is Being Proceed",
     "Find the car of your dreams from the worlds largest marketplace",
-    ImagePath.icCar,
+    ImagePath.onBoardCar_2,
     Colors.white,
   ),
 
