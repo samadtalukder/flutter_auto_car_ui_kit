@@ -1,6 +1,5 @@
+import 'package:auto_car_ui_kit/config/app_colors.dart';
 import 'package:auto_car_ui_kit/config/image_path.dart';
-import 'package:auto_car_ui_kit/ui/on_board_screen/on_board_data_model.dart';
-import 'package:auto_car_ui_kit/ui/on_board_screen/on_board_item.dart';
 import 'package:auto_car_ui_kit/ui/on_board_screen/on_board_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Future.delayed(
-      const Duration(seconds: 5),
+      const Duration(seconds: 3),
       () => Navigator.push(
         context,
         MaterialPageRoute(
@@ -30,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: AppColors.primaryColor_500,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,12 +39,13 @@ class _SplashScreenState extends State<SplashScreen> {
               color: Colors.white,
               height: 120,
             ),
-            Text(
-              "Auto Car".toUpperCase(),
-              style: const TextStyle(
-                color: Colors.white,
+            const Text(
+              "AUTO CAR",
+              style: TextStyle(
+                color: AppColors.greyScale_50,
                 fontSize: 22.0,
-                fontWeight: FontWeight.bold,
+                fontFamily: 'Inter',
+                fontWeight: FontWeight.w700,
               ),
             ),
           ],
