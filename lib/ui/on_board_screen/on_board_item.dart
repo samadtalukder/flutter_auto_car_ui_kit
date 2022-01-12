@@ -1,3 +1,4 @@
+import 'package:auto_car_ui_kit/config/app_colors.dart';
 import 'package:auto_car_ui_kit/ui/on_board_screen/on_board_data_model.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +15,7 @@ class OnBoardItem extends StatelessWidget {
       children: [
         Image.asset(
           onBoardDataModel.onBoardImageSrc,
-          color: Colors.black87,
-          height: 120,
+          height: 250,
           alignment: Alignment.center,
         ),
         Text(
@@ -23,8 +23,9 @@ class OnBoardItem extends StatelessWidget {
           maxLines: 1,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            color: Colors.black87,
+            color: AppColors.greyScale_800,
             fontSize: 24,
+            fontFamily: 'Inter',
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -35,63 +36,13 @@ class OnBoardItem extends StatelessWidget {
             maxLines: 2,
             textAlign: TextAlign.center,
             style: const TextStyle(
-              color: Colors.grey,
-              fontSize: 16.0,
-              fontWeight: FontWeight.normal,
+              color: AppColors.greyScale_500,
+              fontSize: 14,
+              fontFamily: 'Inter',
+              fontWeight: FontWeight.w500,
             ),
           ),
         ),
-        /* Container(
-            margin: const EdgeInsets.only(
-              top: 24,
-              bottom: 24,
-            ),
-            child: Image.asset(
-              ImagePath.icCar,
-              color: Colors.black87,
-              height: 120,
-              alignment: Alignment.center,
-            ),
-          ),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Find Your Dream Car".toUpperCase(),
-                  maxLines: 1,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Colors.black87,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children:  [
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
-                  child: const Text(
-                    "Find the car of your dreams from the worlds largest marketplace",
-                    maxLines: 2,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black87,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),*/
       ],
     );
   }
